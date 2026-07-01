@@ -1,0 +1,52 @@
+name: Resource request
+description: Suggest a paper, codebase, tutorial, dataset, benchmark, or application.
+title: "[Resource]: "
+labels: ["resource"]
+body:
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Resource type
+      options:
+        - Paper
+        - Codebase
+        - Library
+        - Tutorial
+        - Dataset
+        - Benchmark
+        - Application
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Resource title
+      placeholder: Title of the resource
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Official link
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why should this be included?
+      description: Explain why this resource belongs in the scope of this repository.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks
+      value: |
+        - [ ] The link is real and accessible.
+        - [ ] The resource is directly related to this list.
+        - [ ] The description can be verified from the source.
+        - [ ] The resource does not introduce copyright, license, privacy, or platform-policy risk.
+    validations:
+      required: true
