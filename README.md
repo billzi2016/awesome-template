@@ -1,1 +1,5 @@
-Write awesome project here; this is currently a placeholder...
+# Awesome Template
+
+Write awesome project here.
+
+Here is currently a placeholder...
